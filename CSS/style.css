@@ -1,3 +1,5 @@
+
+
 .title__background_img {
     background-size: contain;
     background: url("../Images/IMG_11.JPG") center;
@@ -25,12 +27,23 @@
 }
 
 .menu {
-    font-size: 20px;
-    margin-left: 40px;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+
+    font-size: 25px;
+}
+
+.menu > li {
+    text-align: center;
 }
 
 .section {
-    margin-left: 60px;
+    margin: 50px;
+    /*display: grid;*/
+    /*margin-left: 60px;*/
 }
 
 .section__header {
@@ -47,18 +60,50 @@
 
 .section__subsection_title {
     font-weight:normal;
-    margin-top: 20px;
+    margin-top: 40px;
     height: 40px;
     font-size: 20px;
 }
 
 .section__text {
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7%;
+}
+
+@media (max-width: 1000px) {
+    .section__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-bottom: 300px;
+    }
+
+    .section__header {
+        color: #9AC6E4;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 50px;
+        font-weight:normal; /*not bold*/
+        height: 40px;
+    }
+
+    .section__subsection_title {
+        font-weight:normal;
+        margin-top: 40px;
+        height: 40px;
+        font-size: 40px;
+    }
 }
 
 .section__photo {
-    margin: 50px 10px;
-    height: 300px;
+    width: 100%;
+    object-fit: cover;
     box-shadow: 10px 10px 5px #ccc;
 }
 
@@ -66,8 +111,38 @@
     font-family: cursive;
 }
 
-.quote {
-    margin-top: 20px;
+.grid {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.grid > span {
+    padding: 8px 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.column_name {
+    background-color: #CFD7ED;
+    font-weight: bold;
+}
+
+.chess:nth-child(2n+1) {
+    background-color: #C7EEF0;
+}
+
+.chess:nth-child(2n) {
+    background-color: #f0f0f0;
+}
+
+.contacts {
+    position: absolute;
 }
 
 p {
