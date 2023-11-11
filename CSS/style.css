@@ -36,6 +36,25 @@
     font-size: 25px;
 }
 
+.menu__link {
+    text-decoration: none; /*remove purple color of visited link*/
+    color: inherit;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.menu__link__home {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+.active {
+    color: #9AC6E4;
+}
+
 .menu > li {
     text-align: center;
 }
@@ -139,6 +158,18 @@
 
 .chess:nth-child(2n) {
     background-color: #f0f0f0;
+}
+
+.navbar {
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
 }
 
 .contacts {
