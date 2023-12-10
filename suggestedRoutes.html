@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Предложить свой маршрут</title>
+    <script src="scripts/testScript.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <script type=module src=scripts/navBar.js></script>
+    <div class="navbar"></div>
+    <form id="dataForm" class="form">
+        <label for="name" class="form__label">Название маршрута:</label>
+        <input type="text" class="form__input" id="name" required>
+
+        <label for="month" class="form__label">Месяц:</label>
+        <input type="text" class="form__input" id="month" required>
+
+        <label for="description" class="form__label">Краткое описание маршрута + ссылка:</label>
+        <input type="text" class="form__input" id="description" required>
+
+        <button type="submit" class="form__button">Add Row</button>
+    </form>
+
+    <div id="tableContainer" class="table_div">
+        <table class="table_offer">
+            <thead>
+            <tr class="table_offer__field">
+                <th class="table_offer__field">Название маршрута</th>
+                <th class="table_offer__field">Месяц</th>
+                <th class="table_offer__field">Краткое описание маршрута + ссылка</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+</body>
+</html>
