@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Где я был</title>
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <title>Где я был</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type=module src=scripts/navBar.js></script>
     <div class="navbar"></div>
     <section class="section">
@@ -14,30 +20,77 @@
             <h5 class="section__subsection_title">Сплав по реке кереть</h5>
             <p class="section__text">8 дней веселого времяпрепровождения с картами, костром, выпускниками и просто
                 хорошими людьми</p>
-            <div class="section__container">
-                <img src="Images/keret1.JPG" class=section__photo alt="ph1">
-                <img src="Images/keret2.jpg" class=section__photo alt="ph2">
-                <img src="Images/keret3.jpg" class=section__photo alt="ph3">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Images/keret1.JPG" class=section__photo alt="ph1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/keret2.jpg" class=section__photo alt="ph2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/keret3.JPG" class=section__photo alt="ph3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/keret5.JPG" class=section__photo alt="ph3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/keret6.jpg" class=section__photo alt="ph3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
+
         <section class="section__element">
             <h5 class="section__subsection_title">Поход из Ялты в Балаклаву</h5>
             <p class="section__text">7 дневный поход из Ялты в Балаклаву, живописные виды и прекрасная природа </p>
-            <div class="section__container">
-                <img src="Images/kr1.jpg" class=section__photo alt="ph1">
-                <img src="Images/kr2.jpg" class=section__photo alt="ph2">
-                <img src="Images/kr3.jpg" class=section__photo alt="ph3">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Images/kr1.jpg" class=section__photo alt="ph1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/kr2.jpg" class=section__photo alt="ph2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/kr3.jpg" class=section__photo alt="ph3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/kr4.jpg" class=section__photo alt="ph3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/kr5.jpg" class=section__photo alt="ph3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section class="section__element">
             <h5 class="section__subsection_title">Поход по кавказу</h5>
             <p class="section__text"> 6 дней шли по маршруту тридцатки, еще 6 к горе Большой тхач. </p>
-            <div class="section__container">
-                <img src="Images/kavkaz1.jpg" class=section__photo alt="ph1">
-                <img src="Images/kavkaz2.jpg" class=section__photo alt="ph2">
-                <img src="Images/kavkaz3.jpg" class=section__photo alt="ph3">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Images/kavkaz1.jpg" class=section__photo alt="ph1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/kavkaz2.jpg" class=section__photo alt="ph2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/kavkaz3.JPG" class=section__photo alt="ph3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/kavkaz4.JPG" class=section__photo alt="ph3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/kavkaz5.JPG" class=section__photo alt="ph3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
+        <script src="scripts/swiperSet.js"></script>
         <section class="section__element">
             <h5 class="section__subsection_title">И еще</h5>
             <p class="section__text"> И еще множество турслетов, выездов на Шхеры, Вуоксу и прочие ПВД </p>

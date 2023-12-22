@@ -122,7 +122,7 @@
 
 .section__photo {
     width: 100%;
-    object-fit: cover;
+    /*object-fit: cover;*/
     box-shadow: 10px 10px 5px #ccc;
 }
 
@@ -239,14 +239,6 @@ p {
     padding: 0;
 }
 
-
-
-/*
-#content {
-    max-width: 800px;
-    margin: 0 auto;
-}*/
-
 .table_fetch {
     width: 100%;
     border-collapse: collapse;
@@ -258,7 +250,4 @@ th, td {
     padding: 8px;
     text-align: left;
 }
-/*
-th {
-    background-color: #f2f2f2;
-}*/
+
